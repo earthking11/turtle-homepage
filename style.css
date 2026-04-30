@@ -6,16 +6,16 @@
 }
 
 :root {
-    --primary-color: #00d4ff;
-    --secondary-color: #7b2ff7;
+    --primary-color: #00ff88;
+    --secondary-color: #00cc6a;
     --accent-color: #ff6b6b;
     --bg-dark: #0a0a0a;
     --bg-card: rgba(255, 255, 255, 0.05);
     --text-primary: #ffffff;
     --text-secondary: #b0b0b0;
     --border-color: rgba(255, 255, 255, 0.1);
-    --glow-primary: 0 0 20px rgba(0, 212, 255, 0.3);
-    --glow-secondary: 0 0 20px rgba(123, 47, 247, 0.3);
+    --glow-primary: 0 0 20px rgba(0, 255, 136, 0.3);
+    --glow-secondary: 0 0 20px rgba(0, 204, 106, 0.3);
 }
 
 html {
