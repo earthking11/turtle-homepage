@@ -213,6 +213,9 @@ function setupMobileMenu() {
 // 表单提交处理
 function setupContactForm() {
     const form = document.getElementById('contactForm');
+
+    // 当前主页没有联系表单时，不阻断其余交互初始化。
+    if (!form) return;
     
     form.addEventListener('submit', function(e) {
         e.preventDefault();

@@ -547,6 +547,79 @@ body {
     overflow: hidden;
 }
 
+.turtle-project--finder .project-image {
+    background: linear-gradient(135deg, #113a35 0%, #0a1f22 100%);
+}
+
+.turtle-project--reader .project-image {
+    background: linear-gradient(135deg, #18315a 0%, #111a35 100%);
+}
+
+.turtle-project-visual {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.turtle-project-icon {
+    position: absolute;
+    left: 26px;
+    bottom: 20px;
+    font-size: 4.5rem;
+    filter: drop-shadow(0 10px 14px rgba(0, 0, 0, 0.25));
+    transform: rotate(-8deg);
+}
+
+.finder-search {
+    width: 68%;
+    padding: 11px 14px;
+    margin-left: 58px;
+    color: #dfffe9;
+    font-size: 1rem;
+    border: 1px solid rgba(0, 255, 136, 0.55);
+    border-radius: 6px;
+    background: rgba(0, 0, 0, 0.22);
+    box-shadow: 0 0 24px rgba(0, 255, 136, 0.12);
+}
+
+.finder-pin {
+    position: absolute;
+    top: 27px;
+    right: 30px;
+    color: var(--primary-color);
+    font-size: 2.1rem;
+}
+
+.reader-lines {
+    width: 46%;
+    display: grid;
+    gap: 10px;
+    margin-left: 55px;
+}
+
+.reader-lines span {
+    height: 4px;
+    border-radius: 4px;
+    background: rgba(224, 241, 255, 0.75);
+}
+
+.reader-lines span:nth-child(2) { width: 82%; }
+.reader-lines span:nth-child(3) { width: 93%; }
+.reader-lines span:nth-child(4) { width: 68%; }
+
+.reader-sound {
+    position: absolute;
+    top: 37px;
+    right: 28px;
+    color: #79c9ff;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.6rem;
+    letter-spacing: -0.12em;
+}
+
 .project-overlay {
     position: absolute;
     top: 0;
