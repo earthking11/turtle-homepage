@@ -343,6 +343,15 @@ body {
     background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
 }
 
+.section-subtitle {
+    max-width: 760px;
+    margin: -25px auto 45px;
+    color: var(--text-secondary);
+    text-align: center;
+    font-size: 1.15rem;
+    line-height: 1.8;
+}
+
 /* 关于我部分 */
 .about-content {
     display: grid;
@@ -555,6 +564,14 @@ body {
     background: linear-gradient(135deg, #18315a 0%, #111a35 100%);
 }
 
+.turtle-project--sound .project-image {
+    background: linear-gradient(135deg, #332048 0%, #141027 100%);
+}
+
+.turtle-project--balance .project-image {
+    background: linear-gradient(135deg, #3b2f12 0%, #181407 100%);
+}
+
 .turtle-project-visual {
     position: absolute;
     inset: 0;
@@ -564,13 +581,33 @@ body {
     overflow: hidden;
 }
 
-.turtle-project-icon {
+.turtle-project-visual::before {
+    content: '';
     position: absolute;
-    left: 26px;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.13) 0%, rgba(255, 255, 255, 0) 68%);
+    transform: translate(-74px, 50px);
+}
+
+.app-icon {
+    position: absolute;
+    left: 24px;
     bottom: 20px;
-    font-size: 4.5rem;
-    filter: drop-shadow(0 10px 14px rgba(0, 0, 0, 0.25));
+    width: 92px;
+    height: 92px;
+    border-radius: 24px;
+    object-fit: cover;
+    box-shadow: 0 16px 26px rgba(0, 0, 0, 0.34);
+    filter: saturate(1.08);
     transform: rotate(-8deg);
+    transition: all 0.3s ease;
+    z-index: 1;
+}
+
+.turtle-project:hover .app-icon {
+    transform: rotate(-3deg) scale(1.06);
 }
 
 .finder-search {
@@ -618,6 +655,77 @@ body {
     font-family: 'Orbitron', sans-serif;
     font-size: 1.6rem;
     letter-spacing: -0.12em;
+}
+
+.sound-waves {
+    width: 46%;
+    height: 86px;
+    margin-left: 72px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    gap: 10px;
+}
+
+.sound-waves span {
+    width: 12px;
+    border-radius: 999px;
+    background: linear-gradient(180deg, #f6c1ff, #8c6cff);
+    box-shadow: 0 0 18px rgba(181, 120, 255, 0.25);
+}
+
+.sound-waves span:nth-child(1) { height: 38px; }
+.sound-waves span:nth-child(2) { height: 74px; }
+.sound-waves span:nth-child(3) { height: 55px; }
+.sound-waves span:nth-child(4) { height: 88px; }
+
+.sound-target {
+    position: absolute;
+    top: 32px;
+    right: 28px;
+    color: #e2b8ff;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.5rem;
+}
+
+.balance-panel {
+    width: 48%;
+    margin-left: 70px;
+    padding: 16px;
+    border: 1px solid rgba(255, 210, 102, 0.42);
+    border-radius: 14px;
+    background: rgba(0, 0, 0, 0.22);
+    color: #ffe9ad;
+    display: grid;
+    gap: 5px;
+    box-shadow: 0 0 28px rgba(255, 195, 77, 0.12);
+}
+
+.balance-panel span {
+    color: rgba(255, 233, 173, 0.76);
+    font-size: 0.95rem;
+}
+
+.balance-panel strong {
+    color: #fff6d1;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.35rem;
+}
+
+.balance-coin {
+    position: absolute;
+    top: 25px;
+    right: 32px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(135deg, #ffd36d, #f2a900);
+    color: #321f00;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.28);
 }
 
 .project-overlay {
